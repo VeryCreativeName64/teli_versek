@@ -1,0 +1,147 @@
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+body {
+    background-image: url(kepek/hatter.jpg);
+    display: grid;
+    max-width: 90%;
+}
+
+header{
+    text-align: center;
+    background-image: url(kepek/fejlec.jpg);
+    color: white;
+    padding: 50px;
+    display: grid;
+}
+li {
+    list-style: none;
+    margin:30px;
+}
+.tabla {
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    width: 500%;
+    padding: 50px;
+    border: 1px solid black;
+}
+th {
+    text-align: left;
+    padding: 15px;
+    height: 70px;
+    border: 1px solid black;
+    
+}
+tr:nth-child(even) {
+    border: 1px solid black;
+    background-color: #25c4b6;
+    text-align: left;
+    
+
+}
+main {
+    background-color: white;
+    display: grid;
+    padding:50px;
+    grid-template-areas:
+    'header header header header header header'
+    'nav article article article aside aside'
+    'nav article article article aside aside'
+    'nav article article article aside aside'
+    'footer footer footer footer footer footer';
+}
+nav{
+    margin-right: auto;
+}
+main {
+    margin-top: 30px;
+}
+aside {
+    width: 25%;
+    background-color: white;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+ 
+a:link {
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: rgb(8, 154, 238);
+    padding:20px;
+}
+  
+
+a:visited {
+    color: white;
+    text-decoration: none;   
+}
+  
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+  
+  
+a:active {
+    color:white;
+    text-decoration: none;
+} 
+
+
+.kep1 {
+    display: grid;
+    column-gap: 2px;
+    grid-template-columns:auto auto;
+    padding: 5px;
+    text-align: center;
+    display: grid;
+}
+
+.kep2 {
+    display: grid;
+    column-gap: 2px;
+    grid-template-columns:auto auto;
+    padding: 5px;
+    text-align: center;
+    display: grid;
+}
+img {
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(8, 154, 238);
+    padding: 25px;
+    
+}
+
+@media screen and (max-width: 480px) {
+    #fejlec a {
+        font-size: 1.8rem;
+    }
+
+    section.navigáció {
+        font-size: 1.5rem;
+    }
+
+    section.tartalom {
+        font-size: 0.9rem;
+    }
+
+    .lepes {
+        padding: 30px;
+    }
+}
